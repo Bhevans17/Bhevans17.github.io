@@ -1,94 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="style.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <title>Brenden Evans | Full Stack Developer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="shortcut icon" href="img/nasa-logo.png" />
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <title>Space Daily</title>
 </head>
+
 <body>
-<!-- Header/Navigation -->
-    <header>
-        <div id="hamburger-wrapper">
-            <button aria-controls="navigation" tabindex="0" id="hamburger-icon" class="hamburger hamburger--collapse" type="button">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-        </div>
-        <nav>
-            <div id="nav-links-wrapper">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <div id="body-wrapper"> 
-        <!-- Main Section -->
-        <section id="main-section">
-            <p id="demo"></p>
-            <button id="contact-btn">Contact Me</button>
-        </section>
 
-        <!-- About Me -->
-        <section id="about-me">
-            <h1>About Me</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem cum labore dicta, maiores nam doloribus perferendis animi obcaecati, quas reprehenderit sunt optio nemo placeat minus minima. Placeat itaque excepturi similique.</p>
-        </section>
-
-        <!-- Projects -->
-        <section id="my-projects">
-            <h1>Projects</h1>
-            <div id="projects-img-wrapper">
-                <img src="images/download.png" alt="placeholder">
-                <img src="images/download.png" alt="placeholder">
-                <img src="images/download.png" alt="placeholder">
-            </div>
-        </section>
-
-        <!-- Contact Form -->
-        <section id="contact-section">
-            <h1>Contact Me</h1>
-            <div id="form-wrapper">
-            <form action="">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name"placeholder="Enter name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                </div>
-                <button class="btn" type="submit">Submit</button>
-            </form>
-</div>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-            <a href=""><i class="fab fa-github"></i></a>
-            <a href=""><i class="fab fa-linkedin"></i></a>
-            <p id="copyright">Brenden Evans &copy; All Rights Reserved.</p>
-            <p>Design by Brenden Evans</p>
-        </footer>
+    <div id="particles-js">
     </div>
 
+    <div id="main-section" class="container">
+        <div class="row pt-5">
+            <div class="col-md-12">
+                <img id="nasa-logo" src="img/nasa-logo.png" alt="">
+            </div>
+            <div class="col-md-12 mb-3">
+                <h1>Astronomy Picture Of The Day</h1>
+            </div>
+            <div class="col-md-12 mb-5">
+                <img class="img-fluid" id="apod_img_id" />
+                <iframe id="apod_vid_id" type="text/html"></iframe>
+            </div>
+            <div class="col-md-8 offset-md-2 px-5">
+                <h2 id="apod_title"></h2>
+                <p id="apod_explanation"></p>
+            </div>
+            <div class="col-md-12 mt-5">
+                <p>Nasa's API can be found <a href="https://api.nasa.gov/">here</a></p>
+            </div>
+        </div>
+    </div>
+    </div>
 
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>
