@@ -1,0 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar-brand {
+  font-size: 1.5vw !important;
+}
+
+.jumbotron {
+  background: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.custom-font {
+  font-family: "Dancing Script", cursive, Helvetica, sans-serif;
+}

@@ -4,22 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-        crossorigin="" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="style.css" type="text/css" rel="stylesheet">
-    <title>Techsmart | Tech Solutions</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">-->
+    <title>BabyFirstSet | Handcrafted Baby Apparal</title>
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <!------------- NAVIGATION ------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
-            <a class="navbar-brand" href="#"><i class="fas fa-server"></i>&nbsp;Techsmart</a>
+            <a class="navbar-brand custom-font" href="index.html"><i class="fas fa-baby"></i> BabyFirstSet</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,177 +25,189 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Our Promise</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#products">Products</a>
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cart.html" class="nav-link"><i class="fas fa-shopping-cart"></i> <span
+                                class="badge badge-pill badge-primary">3</span></a>
+
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- Main Section -->
-    <main>
-        <div class="container align-items-center my-5">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h1>Techsmart</h1>
-                    <p class="text-secondary">We Do Innovation.</p>
-                    <a href="#products" class="btn btn-primary">
-                        Get Started
-                    </a>
-                    <a href="#products" class="btn btn-outline-primary">Products</a>
-                </div>
-                <div class="col-md-6">
-                    <img src="./img/main-img.svg" class="img-fluid w-100 h-100" alt="">
-                </div>
-            </div>
-        </div>
-    </main>
-    <!-- Products Section -->
-    <div id="products" class="container-fluid bg-light">
-        <div class="container p-5">
-            <div class="row text-center">
-                <div class="col-md-12 text-center mb-5">
-                    <h2 class="font-weight-bold">Products</h2>
-                    <p class="text-black-50">Cutting edge solutions for the future.</p>
-                </div>
-                <div class="col-md-4 text-dark">
-                    <div class="card border-primary">
-                        <div class="card-body">
-                            <img src="./img/card-1.svg" class="img-fluid my-5" alt="">
-                            <h3 class="card-title"><i class="fas fa-moon"></i>&nbsp;Moon</h3>
-                            <p class="card-text text-black-50">Help track your products latests updates</p>
-                            <a href="#" class="btn btn-primary">$129.99</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 text-dark">
-                    <div class="card border-primary">
-                        <div class="card-body">
-                            <img src="./img/card-2.svg" class="img-fluid my-5" alt="">
-                            <h3 class="card-title"><i class="fas fa-sun"></i>&nbsp;Sun</h3>
-                            <p class="card-text text-black-50">Better marketing for your tech. This product is really
-                                cool.</p>
-                            <a href="#" class="btn btn-primary">$349.99</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 text-dark">
-                    <div class="card border-primary">
-                        <div class=" card-body">
-                            <img src="./img/card-3.svg" class="img-fluid my-5" alt="">
-                            <h3 class="card-title"><i class="fas fa-user-astronaut"></i>&nbsp;Space</h3>
-                            <p class="card-text text-black-50">Free up all the things thats keeping your product from
-                                blossoming.</p>
-                            <a href="#" class="btn btn-primary">$499.99</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 text-center mt-5">
-                    <h4 class="font-weight-bold">Need Help With Something?</h4>
-                    <p class="text-black-50">Contact us with any questions do not hesitate to ask.</p>
-                    <a class="btn btn-outline-primary" href="#">Contact Us</a>
-                </div>
-            </div>
+    <!------------- JUMBOTRON ------------->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4 custom-font">Handcrafted</h1>
+            <p class="lead">Every piece of clothing has been crafted by hand.</p>
+            <hr class="my-4">
+            <a class="btn btn-warning btn-lg text-white" href="#boys-section" role="button">Shop Boys</a>
+            <a class="btn btn-primary btn-lg" href="#girls-section" role="button">Shop Girls</a>
         </div>
     </div>
-    <!-- Banner -->
-    <div id="about" class="container-fluid m-0 bg-primary py-5 text-white">
-        <div data-aos="fade-up" class="container">
-            <h2 class="font-weight-bold">Our Promise.</h2>
-            <p>To provide cutting edge solutions to our customers.Breaking barriers while still
-                maintaining the highest
-                quality products that we can provide.</p>
-        </div>
-    </div>
-    <!-- Info Section #1 -->
-    <div class="container my-5">
-        <div data-aos="fade-right" class="row align-items-center text-center">
-            <div class="col-md-6">
-                <img class="img-fluid" src="./img/ls-1.svg" alt="">
-            </div>
-            <div class="col-md-6">
-                <h5 class="font-weight-bold">What Are You Waiting For?</h5>
-                <p class="text-black-50">Lets get the ball rolling help us help you grow your business!</p>
-                <h5 class="font-weight-bold">The Cleanest Craftmanship.</h5>
-                <p class="text-black-50">Everything is well planned, built, and tested.</p>
-                <h5 class="font-weight-bold">Satisfaction Gurantee.</h5>
-                <p class="text-black-50">If you're not satisfied with out products we offer a full refund just in
-                    contact with us.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Info Section #2 -->
-    <div class="container my-5 py-5">
-        <div data-aos="fade-left" class="row align-items-center text-center">
-            <div class="col-md-6">
-                <h5 class="font-weight-bold">Get Tips & Tricks On How To Grow Your Business.</h5>
-                <p class="text-black-50">We get up to date data that will help you with any need.</p>
-                <h5 class="font-weight-bold">The Fastest Products.</h5>
-                <p class="text-black-50">It's safe to say our products speak for themeselves. Go ahead and test them
-                    out!</p>
-                <h5 class="font-weight-bold">Get Live Updates.</h5>
-                <p class="text-black-50">Our information is updated live so you can utilize every second.</p>
-            </div>
-            <div class="col-md-6">
-                <img class="img-fluid" src="./img/ls-2.svg" alt="">
-            </div>
-        </div>
-    </div>
-    <!-- Footer -->
-    <!-- Leaflet -->
-    <div class="container-fluid p-0">
-        <div id="mapid"></div>
-    </div>
-    <div class="container-fluid footer bg-primary text-white">
-        <div class="container text-center">
-            <div class="row py-5">
+    <!------------- PRODUCTS ------------->
+    <div class="container-fluid">
+        <div class="container my-5">
+            <div class="row">
+                <!------------- FEATURED ------------->
                 <div class="col-md-12">
-                    <h2 class="m-0">TechSmart</h2>
-                    <p class="m-0 text-white-50">We Do Innovation.</p>
-                    <ul class="nav justify-content-center my-3">
+                    <h1 class="my-5 custom-font">Featured</h1>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="width: 18rem;">
+                        <img src="./img/boy-set.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Boy's Set</h5>
+                            <h6 class="text-secondary">$99.99</h6>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="width: 18rem;">
+                        <img src="./img/girl-set.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Girl's Set</h5>
+                            <h6 class="text-secondary">$99.99</h6>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="width: 18rem;">
+                        <img id="blanket" src="./img/boy-blanket.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Blanket</h5>
+                            <h6 class="text-secondary">$60.00</h6>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!------------- BOYS ------------->
+                <div class="col-md-12">
+                    <h1 id="boys-section" class="my-5 custom-font">Boys</h1>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="width: 18rem;">
+                        <img src="./img/boy-beanie.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Boy's Beanie</h5>
+                            <h6 class="text-secondary">$99.99</h6>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="width: 18rem;">
+                        <img src="./img/boy-glove.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Boy's Gloves</h5>
+                            <h6 class="text-secondary">$99.99</h6>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="width: 18rem;">
+                        <img src="./img/boy-booty.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Boy's Booties</h5>
+                            <h6 class="text-secondary">$60</h6>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!------------- GIRLS ------------->
+                <div class="col-md-12">
+                    <h1 id="girls-section" class="my-5 custom-font">Girls</h1>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="width: 18rem;">
+                        <img src="./img/girl-beanie.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Girl's Beanies</h5>
+                            <h6 class="text-secondary">$99.99</h6>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="width: 18rem;">
+                        <img src="./img/girl-glove.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Girl's Gloves</h5>
+                            <h6 class="text-secondary">$99.99</h6>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center" style="width: 18rem;">
+                        <img src="./img/girl-booty.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Girl's Booties</h5>
+                            <h6 class="text-secondary">$60</h6>
+                            <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------- FOOTER ------------->
+    <footer class="bg-primary mt-5">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="nav">
                         <li class="nav-item">
-                            <a href="#" class="f-icon text-white m-2"><i class="fab fa-facebook-square"></i></a>
+                            <a class="nav-link text-white" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="f-icon text-white m-2"><i class="fab fa-twitter-square"></i></a>
+                            <a class="nav-link text-white" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="f-icon text-white m-2"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="f-icon text-white m-2"><i class="fab fa-linkedin"></i></a>
+                            <a class="nav-link text-white" href="faq.html">FAQ</a>
                         </li>
                     </ul>
-                    <p class="m-0 text-white-50">Created By TechSmart &copy; 2020 All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#"><i class="fab fa-facebook-square"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#"><i class="fab fa-twitter-square"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#"><i class="fab fa-instagram-square"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#"><i class="fab fa-pinterest-square"></i></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    </footer>
     <script src="https://kit.fontawesome.com/b836e57116.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-        crossorigin=""></script>
     <script src="./js/index.js"></script>
 </body>
 
