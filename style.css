@@ -1,0 +1,35 @@
+#main {
+  padding-top: 15vh;
+}
+
+/* Navigation */
+nav,
+footer {
+  background-color: black !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: lightgrey !important;
+}
+
+/* Main */
+main h1 {
+  font-family: "Poiret One", cursive;
+}
+
+/* Weekly Menu */
+#weekly-menu h2,
+h3 {
+  font-family: "Poiret One", cursive;
+}
+
+/* Contact Form */
+
+/* Footer */
+.fa-facebook-square {
+  font-size: 1.5vw;
+}

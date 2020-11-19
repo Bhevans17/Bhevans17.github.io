@@ -4,211 +4,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link href="css/style.css" type="text/css" rel="stylesheet">
-    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <!--<link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">-->
-    <title>BabyFirstSet | Handcrafted Baby Apparal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>Chef On The Road | Miles Away From Fast Food</title>
 </head>
 
 <body>
-    <!------------- NAVIGATION ------------->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <!-- Navigation Bar-->
+    <nav class="navbar navbar-expand-lg shadow fixed-top">
         <div class="container">
-            <a class="navbar-brand custom-font" href="index.html"><i class="fas fa-baby"></i> BabyFirstSet</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#"><img src="./img/img1.png" alt=""></a>
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#weekly-menu">Weekly Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="#">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="faq.html">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="cart.html" class="nav-link"><i class="fas fa-shopping-cart"></i> <span
-                                class="badge badge-pill badge-primary">3</span></a>
-
+                        <a class="nav-link" href="#">Order Online</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!------------- JUMBOTRON ------------->
-    <div class="jumbotron">
-        <div class="container">
-            <h1 class="display-4 custom-font">Handcrafted</h1>
-            <p class="lead">Every piece of clothing has been crafted by hand.</p>
-            <hr class="my-4">
-            <a class="btn btn-warning btn-lg text-white" href="#boys-section" role="button">Shop Boys</a>
-            <a class="btn btn-primary btn-lg" href="#girls-section" role="button">Shop Girls</a>
+    <main>
+        <div id="main" class="container">
+            <div class="row align-items-center d-flex py-5">
+                <div class="col-md-6">
+                    <h1 class="display-4">Chef On The Road</h1>
+
+                    <p class="lead">Our mission is to offer a healthy gourmet choice using the best ingredients
+                        in
+
+                        the market, made fresh everyday at an affordable price delivered right to your work.
+
+                        Our daily gourmet menu includes a variety of delicious sandwiches,
+
+                        wraps, salads, hot lunches, soups and more!</p>
+
+                    <a class="btn btn-outline-success" href="#">Order Online</a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img class="animated bounceInRight" src="./img/cheflogo.jpg" alt="">
+                </div>
+            </div>
         </div>
-    </div>
-    <!------------- PRODUCTS ------------->
-    <div class="container-fluid">
-        <div class="container my-5">
+        <div class="container-fluid m-0 p-0">
             <div class="row">
-                <!------------- FEATURED ------------->
                 <div class="col-md-12">
-                    <h1 class="my-5 custom-font">Featured</h1>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center" style="width: 18rem;">
-                        <img src="./img/boy-set.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Boy's Set</h5>
-                            <h6 class="text-secondary">$99.99</h6>
-                            <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add To Cart</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center" style="width: 18rem;">
-                        <img src="./img/girl-set.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Girl's Set</h5>
-                            <h6 class="text-secondary">$99.99</h6>
-                            <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add To Cart</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center" style="width: 18rem;">
-                        <img id="blanket" src="./img/boy-blanket.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Blanket</h5>
-                            <h6 class="text-secondary">$60.00</h6>
-                            <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add To Cart</a>
-                        </div>
-                    </div>
-                </div>
-                <!------------- BOYS ------------->
-                <div class="col-md-12">
-                    <h1 id="boys-section" class="my-5 custom-font">Boys</h1>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center" style="width: 18rem;">
-                        <img src="./img/boy-beanie.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Boy's Beanie</h5>
-                            <h6 class="text-secondary">$99.99</h6>
-                            <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add To Cart</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center" style="width: 18rem;">
-                        <img src="./img/boy-glove.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Boy's Gloves</h5>
-                            <h6 class="text-secondary">$99.99</h6>
-                            <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add To Cart</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center" style="width: 18rem;">
-                        <img src="./img/boy-booty.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Boy's Booties</h5>
-                            <h6 class="text-secondary">$60</h6>
-                            <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add To Cart</a>
-                        </div>
-                    </div>
-                </div>
-                <!------------- GIRLS ------------->
-                <div class="col-md-12">
-                    <h1 id="girls-section" class="my-5 custom-font">Girls</h1>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center" style="width: 18rem;">
-                        <img src="./img/girl-beanie.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Girl's Beanies</h5>
-                            <h6 class="text-secondary">$99.99</h6>
-                            <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add To Cart</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center" style="width: 18rem;">
-                        <img src="./img/girl-glove.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Girl's Gloves</h5>
-                            <h6 class="text-secondary">$99.99</h6>
-                            <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add To Cart</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card text-center" style="width: 18rem;">
-                        <img src="./img/girl-booty.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Girl's Booties</h5>
-                            <h6 class="text-secondary">$60</h6>
-                            <a href="#" class="btn btn-primary"><i class="fas fa-cart-plus"></i> Add To Cart</a>
-                        </div>
+                    <div class="text-center bg-success text-white py-1">
+                        <h4>If you would like to contact us by phone, please call: (702) 286-6160
+
+                            or email: info@chefontheroad.com</h4>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!------------- FOOTER ------------->
-    <footer class="bg-primary mt-5">
-        <div class="container py-3">
+    </main>
+    <!-- Weekly Menu -->
+    <section id="weekly-menu">
+        <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="faq.html">FAQ</a>
-                        </li>
+                <div class="col-md-12 my-5">
+                    <h2 id="weekly-menu" class="display-4 text-center">Weekly Menu</h2>
+                </div>
+                <!--
+                <div class="col-md-6 mb-5">
+                    <h3 class="text-secondary">Monday, Febuary 10th</h3>
+                    <ul>
+                        <li>Chicken pesto pita w/ pesto aioli cup</li>
+                        <li>Turkey & cheddar pretzel w/ cream of potato soup combo</li>
+                        <li>Greek chicken salad w/ greek vinaigrette</li>
+                    </ul>
+
+                </div>
+                <div class="col-md-6 mb-5">
+                    <h3 class="text-secondary">Tuesday, Febuary 11th</h3>
+                    <ul>
+                        <li>Chicken pesto pita w/ pesto aioli cup</li>
+                        <li>Turkey & cheddar pretzel w/ cream of potato soup combo</li>
+                        <li>Greek chicken salad w/ greek vinaigrette</li>
                     </ul>
                 </div>
-                <div class="col-md-6">
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#"><i class="fab fa-facebook-square"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#"><i class="fab fa-twitter-square"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#"><i class="fab fa-instagram-square"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#"><i class="fab fa-pinterest-square"></i></a>
-                        </li>
+                <div class="col-md-6 mb-5">
+                    <h3 class="text-secondary">Wednesday, Febuary 12th</h3>
+                    <ul>
+                        <li>Chicken pesto pita w/ pesto aioli cup</li>
+                        <li>Turkey & cheddar pretzel w/ cream of potato soup combo</li>
+                        <li>Greek chicken salad w/ greek vinaigrette</li>
                     </ul>
+                </div>
+                <div class="col-md-6 mb-5">
+                    <h3 class="text-secondary">Thursday, Febuary 13th</h3>
+                    <ul>
+                        <li>Chicken pesto pita w/ pesto aioli cup</li>
+                        <li>Turkey & cheddar pretzel w/ cream of potato soup combo</li>
+                        <li>Greek chicken salad w/ greek vinaigrette</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 mb-5">
+                    <h3 class="text-secondary">Friday, Febuary 14th</h3>
+                    <ul>
+                        <li>Chicken pesto pita w/ pesto aioli cup</li>
+                        <li>Turkey & cheddar pretzel w/ cream of potato soup combo</li>
+                        <li>Greek chicken salad w/ greek vinaigrette</li>
+                    </ul>
+                </div>
+                <div class="col-md-12 mb-5">
+                    <h3 class="text-success">ALSO AVAILABLE THIS WEEK</h3>
+                    <ul>
+                        <li>PB & jelly combo with hard boiled egg, diced fruit & cheese cup (Everyday)</li>
+                        <li>Breakfast burritos with banana – chocolate chips bread, fruit cup & salsa cup (Tuesday,
+                            Wednesday & Thursday)</li>
+                        <li>Mediterranean chicken combo with hummus and pita bread (Tuesday, Wednesday & Thursday)</li>
+                    </ul>
+                </div>
+                <div class="col-md-12 mb-5">
+                    <h4 class="text-danger">PLEASE SUBMIT ANY SPECIAL REQUEST ON THE DAY BEFORE <br>
+                        FOR CATERING ORDERS, PLEASE CALL (702) 286-6160
+                    </h4>
+                </div>
+                -->
+            </div>
+        </div>
+    </section>
+    <!-- Contact Form -->
+    <section>
+        <div class="container justify-content-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center py-2">Order Online</h2>
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Name</label>
+                            <input class="form-control" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Company</label>
+                            <input class="form-control" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Contact Number</label>
+                            <input class="form-control" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input class="form-control" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Order/Message</label>
+                            <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <button class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row align-items-center text-center text-white">
+                <div class="col-md-4">
+                    <a class="nav-link" href="https://www.facebook.com/chefontheroadpictures/" target="_blank"><i
+                            class="fab fa-facebook-square"></i>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <p class="m-0">Chef On The Road &copy; 2020 All Rights Reserved.</p>
+                </div>
+                <div class="col-md-4">
+                    <img class="img-fluid" src="./img/img2.png" alt="">
                 </div>
             </div>
         </div>
     </footer>
+
     <script src="https://kit.fontawesome.com/b836e57116.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script src="./js/index.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
