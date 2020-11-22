@@ -1,5 +1,11 @@
-#main {
-  padding-top: 15vh;
+/* Heading Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif, sans-serif !important;
 }
 
 /* Navigation */
@@ -16,20 +22,52 @@ footer {
   color: lightgrey !important;
 }
 
-/* Main */
-main h1 {
-  font-family: "Poiret One", cursive;
+/* Leaflet Map */
+#mapid {
+  height: 300px;
 }
-
-/* Weekly Menu */
-#weekly-menu h2,
-h3 {
-  font-family: "Poiret One", cursive;
-}
-
-/* Contact Form */
 
 /* Footer */
-.fa-facebook-square {
-  font-size: 1.5vw;
+.fab {
+  font-size: 2vw;
+  text-decoration: none !important;
+}
+
+.fab:hover {
+  color: grey !important;
+  font-size: 2vw;
+  text-decoration: none !important;
+}
+
+.f-icon {
+  font-size: 2vw;
+  color: white !important;
+}
+
+.f-icon:hover {
+  color: grey !important;
+  font-size: 2vw;
+  text-decoration: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .fab {
+    font-size: 15vw;
+  }
+
+  .f-icon {
+    font-size: 15vw;
+    color: white !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .fab {
+    font-size: 7vw;
+  }
+
+  .f-icon {
+    font-size: 7vw;
+    color: white !important;
+  }
 }
