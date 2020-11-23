@@ -4,103 +4,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/cotr-logo-2.jpg" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
         crossorigin="" />
-    <link href="style.css" type="text/css" rel="stylesheet">
-    <link rel="icon" href="./img/cotr-logo-2.jpg">
     <title>Chef On The Road | Miles Away From Fast Food</title>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark border-bottom">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="./img/cotr-logo-1.png" alt="Chef on the road logo"></a>
-            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <a class="navbar-brand" href="/"><img src="./img/cotr-logo-1.png" alt="Chef on the road logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#weekly-menu">Weekly Menu</a>
+                        <a class="nav-link" href="#">Order Online</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="#">Order Online</a>
+                        <a class="nav-link" href="#">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#pre-order">Contact Us</a>
+                        <a class="nav-link" href="#">Newsletter</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#newsletter">Newsletter</a>
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Create Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
                     </li>
                 </ul>
             </div>
-            <span class="navbar-text">
-                Email: info@chefontheroad.com <br>
-                Phone: 702-286-6160
-            </span>
         </div>
     </nav>
-    <!-- Main -->
-    <main>
-        <div class="container mb-5 vh-100 d-flex align-items-center">
-            <div class="row align-items-center d-flex py-5">
-                <div class="col-md-6">
-                    <h1 class="display-4">Chef On The Road</h1>
-                    <h4>~ Since 2010 ~</h4>
-                    <p class="lead">Our mission is to offer a healthy gourmet choice using the best ingredients
-                        in the market, made fresh everyday at an affordable price delivered right to your work.
-                        Our daily gourmet menu includes a variety of delicious sandwiches, wraps, salads, hot lunches,
-                        soups and more!</p>
-                    <a href="https://www.facebook.com/chefontheroadpictures/" target="_blank"><i
-                            class="fab fa-facebook-square text-dark mr-4 mb-4"></i>
-                    </a>
-                    <a href="https://www.yelp.com/biz/chef-on-the-road-las-vegas" target="_blank"><i
-                            class="fab fa-yelp text-dark mb-4"></i>
-                    </a>
-                    <br>
-                    <a class="btn btn-success" data-toggle="modal" data-target="#exampleModal" href="#">Order Online</a>
-                    <a class="btn btn-outline-success" href="#pre-order">Contact Us</a>
-                </div>
-                <div class="col-md-6 text-center">
-                    <img class="animated bounceInRight" src="./img/cotr-logo-2.jpg" alt="">
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Online Payment</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div id="paypal-button-container"></div>
 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
+    <!-- Main -->
+
+    <main>
+        <div id="main" class="container-fluid m-0 vh-100 d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-white text-center">
+                        <img class="img-fluid" src="./img/Untitled.png" alt="">
+                        <h1>Chef On The Road</h1>
+                        <h2>~ Since 2010 ~</h2>
+                        <button class="btn btn-success mt-4">Order Online</button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+
+
+    <!-- About Us -->
+
+    <div class="container-fluid">
+        <div class="container py-5">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6">
+                    <h2>About Us</h2>
+                    <p>Our mission is to offer a healthy gourmet choice using the best ingredients in the market, made
+                        fresh everyday at an affordable price delivered right to your work. Our daily gourmet menu
+                        includes a variety of delicious sandwiches, wraps, salads, hot lunches, soups and more!</p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="./img/chefs-2.JPG" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Weekly Menu -->
+
+    <div id="weekly-menu" class="container-fluid">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-md-12 text-center bg-white py-3">
+                    <h2>Weekly Menu</h2>
+                    <h4 class="text-center text-secondary">All Items: $9.00</h4>
+                </div>
+                <div class="col-md-4 border p-5 bg-white">
+                    <h4 class="text-center mb-4 text-success">Monday</h4>
+                    <h6 class="text-center mb-4 text-secondary">November 16th, 2020</h6>
+                    <ul>
+                        <li lass="font-weight-bold">HOT LUNCH: Grilled chicken with turmeric rice & assorted veggies.
+                            BBQ
+                            sauce
+                            cup</li>
+                        <li lass="font-weight-bold">Turkey, salami & muenster cheese pretzel</li>
+                        <li lass="font-weight-bold">Buffalo chicken wrap w/ buffalo ranch</li>
+                        <li lass="font-weight-bold">Turkey club salad w/ avocado ranch dressing</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 border p-5 bg-white">
+                    <h4 class="text-center mb-4 text-success">Tuesday</h4>
+                    <h6 class="text-center mb-4 text-secondary">November 17th, 2020</h6>
+                    <ul>
+                        <li lass="font-weight-bold">HOT LUNCH: Grilled chicken with turmeric rice & assorted veggies.
+                            BBQ
+                            sauce
+                            cup</li>
+                        <li lass="font-weight-bold">Turkey, salami & muenster cheese pretzel</li>
+                        <li lass="font-weight-bold">Buffalo chicken wrap w/ buffalo ranch</li>
+                        <li lass="font-weight-bold">Turkey club salad w/ avocado ranch dressing</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 border p-5 bg-white">
+                    <h4 class="text-center mb-4 text-success">Wednesday</h4>
+                    <h6 class="text-center mb-4 text-secondary">November 18th, 2020</h6>
+                    <ul>
+                        <li lass="font-weight-bold">HOT LUNCH: Grilled chicken with turmeric rice & assorted veggies.
+                            BBQ
+                            sauce
+                            cup</li>
+                        <li lass="font-weight-bold">Turkey, salami & muenster cheese pretzel</li>
+                        <li lass="font-weight-bold">Buffalo chicken wrap w/ buffalo ranch</li>
+                        <li lass="font-weight-bold">Turkey club salad w/ avocado ranch dressing</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 border p-5 bg-white">
+                    <h4 class="text-center mb-4 text-success">Thursday</h4>
+                    <h6 class="text-center mb-4 text-secondary">November 19th, 2020</h6>
+                    <ul>
+                        <li lass="font-weight-bold">HOT LUNCH: Grilled chicken with turmeric rice & assorted veggies.
+                            BBQ
+                            sauce
+                            cup</li>
+                        <li lass="font-weight-bold">Turkey, salami & muenster cheese pretzel</li>
+                        <li lass="font-weight-bold">Buffalo chicken wrap w/ buffalo ranch</li>
+                        <li lass="font-weight-bold">Turkey club salad w/ avocado ranch dressing</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 border p-5 bg-white">
+                    <h4 class="text-center mb-4 text-success">Friday</h4>
+                    <h6 class="text-center mb-4 text-secondary">November 20th, 2020</h6>
+                    <ul>
+                        <li lass="font-weight-bold">HOT LUNCH: Grilled chicken with turmeric rice & assorted veggies.
+                            BBQ
+                            sauce
+                            cup</li>
+                        <li lass="font-weight-bold">Turkey, salami & muenster cheese pretzel</li>
+                        <li lass="font-weight-bold">Buffalo chicken wrap w/ buffalo ranch</li>
+                        <li lass="font-weight-bold">Turkey club salad w/ avocado ranch dressing</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 border p-5 bg-white">
+                    <h4 class="text-center mb-5 text-danger">Also Available This Week</h4>
+                    <ul>
+                        <li lass="font-weight-bold">Corn chowder soup & caesar salad combo w/fresh bread (M-T)</li>
+                        <li lass="font-weight-bold">Cream of broccoli soup & greek salad combo w/fresh bread (W-TH)</li>
+                        <li lass="font-weight-bold">Sloppy joe’s w/ veggie tray & ranch dip (T-W)</li>
+                        <li lass="font-weight-bold">Caprese sandwich (Friday only)</li>
+                        <li lass="font-weight-bold">PB & jelly combo (Monday only)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Newsletter -->
+
     <div id="newsletter" class="container-fluid m-0 p-0 bg-success">
-        <div class="container py-3">
+        <div class="container py-5">
             <h2 class="text-white text-center mb-2">Sign up for our weekly menu!</h2>
             <form action="#">
                 <div class="input-group">
@@ -113,185 +194,192 @@
             </form>
         </div>
     </div>
-    <!-- Weekly Menu -->
-    <div id="weekly-menu" class="container">
-        <div class="row pb-5">
-            <div class="col-md-12 text-center my-5">
-                <h2>Weekly Menu</h2>
-                <h4 class="text-center text-secondary">All Items: $9.00</h4>
-            </div>
-            <div class="col-md-4 border p-5">
-                <h4 class="text-center mb-4 text-success">Monday</h4>
-                <h6 class="text-center mb-4 text-secondary">November 16th, 2020</h6>
-                <ul>
-                    <li lass="font-weight-bold">HOT LUNCH: Grilled chicken with turmeric rice & assorted veggies. BBQ
-                        sauce
-                        cup</li>
-                    <li lass="font-weight-bold">Turkey, salami & muenster cheese pretzel</li>
-                    <li lass="font-weight-bold">Buffalo chicken wrap w/ buffalo ranch</li>
-                    <li lass="font-weight-bold">Turkey club salad w/ avocado ranch dressing</li>
-                </ul>
-            </div>
-            <div class="col-md-4 border p-5">
-                <h4 class="text-center mb-4 text-success">Tuesday</h4>
-                <h6 class="text-center mb-4 text-secondary">November 17th, 2020</h6>
-                <ul>
-                    <li lass="font-weight-bold">HOT LUNCH: Grilled chicken with turmeric rice & assorted veggies. BBQ
-                        sauce
-                        cup</li>
-                    <li lass="font-weight-bold">Turkey, salami & muenster cheese pretzel</li>
-                    <li lass="font-weight-bold">Buffalo chicken wrap w/ buffalo ranch</li>
-                    <li lass="font-weight-bold">Turkey club salad w/ avocado ranch dressing</li>
-                </ul>
-            </div>
-            <div class="col-md-4 border p-5">
-                <h4 class="text-center mb-4 text-success">Wednesday</h4>
-                <h6 class="text-center mb-4 text-secondary">November 18th, 2020</h6>
-                <ul>
-                    <li lass="font-weight-bold">HOT LUNCH: Grilled chicken with turmeric rice & assorted veggies. BBQ
-                        sauce
-                        cup</li>
-                    <li lass="font-weight-bold">Turkey, salami & muenster cheese pretzel</li>
-                    <li lass="font-weight-bold">Buffalo chicken wrap w/ buffalo ranch</li>
-                    <li lass="font-weight-bold">Turkey club salad w/ avocado ranch dressing</li>
-                </ul>
-            </div>
-            <div class="col-md-4 border p-5">
-                <h4 class="text-center mb-4 text-success">Thursday</h4>
-                <h6 class="text-center mb-4 text-secondary">November 19th, 2020</h6>
-                <ul>
-                    <li lass="font-weight-bold">HOT LUNCH: Grilled chicken with turmeric rice & assorted veggies. BBQ
-                        sauce
-                        cup</li>
-                    <li lass="font-weight-bold">Turkey, salami & muenster cheese pretzel</li>
-                    <li lass="font-weight-bold">Buffalo chicken wrap w/ buffalo ranch</li>
-                    <li lass="font-weight-bold">Turkey club salad w/ avocado ranch dressing</li>
-                </ul>
-            </div>
-            <div class="col-md-4 border p-5">
-                <h4 class="text-center mb-4 text-success">Friday</h4>
-                <h6 class="text-center mb-4 text-secondary">November 20th, 2020</h6>
-                <ul>
-                    <li lass="font-weight-bold">HOT LUNCH: Grilled chicken with turmeric rice & assorted veggies. BBQ
-                        sauce
-                        cup</li>
-                    <li lass="font-weight-bold">Turkey, salami & muenster cheese pretzel</li>
-                    <li lass="font-weight-bold">Buffalo chicken wrap w/ buffalo ranch</li>
-                    <li lass="font-weight-bold">Turkey club salad w/ avocado ranch dressing</li>
-                </ul>
-            </div>
 
-            <div class="col-md-4 border p-5">
-                <h4 class="text-center mb-5 text-danger">Also Available This Week</h4>
-                <ul>
-                    <li lass="font-weight-bold">Corn chowder soup & caesar salad combo w/fresh bread (M-T)</li>
-                    <li lass="font-weight-bold">Cream of broccoli soup & greek salad combo w/fresh bread (W-TH)</li>
-                    <li lass="font-weight-bold">Sloppy joe’s w/ veggie tray & ranch dip (T-W)</li>
-                    <li lass="font-weight-bold">Caprese sandwich (Friday only)</li>
-                    <li lass="font-weight-bold">PB & jelly combo (Monday only)</li>
-                </ul>
+    <!-- Testimonials -->
+
+    <div id="testimonials" class="container-fluid m-0 bg-dark">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-md-12">
+                    <h2 class="text-white mb-5">Testimonials</h2>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Tiffany S.</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">From Yelp</h6>
+                            <img class="img-fluid" src="./img/download.png" alt="">
+                            <p class="card-text">The turkey on pretzel roll is amazing! But just had the turkey ciabatta
+                                with cranberry sauce and cream cheese today - omg delicious! Fantastic customer service
+                                and great prices too since he comes to my office everyday!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Karlee M.</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">From Yelp</h6>
+                            <img class="img-fluid" src="./img/download.png" alt="">
+                            <p class="card-text">Fantastic food and great service! You can call ahead and they will make
+                                sure your taken care of. Five stars.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-auto">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Pedro Lopez-Lavalle</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">From Facebook</h6>
+                            <img class="img-fluid" src="./img/download.png" alt="">
+                            <p class="card-text">The best catering place in Las Vegas!</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- Contact Us / Order Online -->
+
+    <!-- Image Gallery -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 py-5 text-center">
+                <h2>Gallery</h2>
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid p-4" src="./img/food-1.png" alt="">
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid p-4" src="./img/food-2.png" alt="">
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid p-4" src="./img/food-3.png" alt="">
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid p-4" src="./img/food-4.png" alt="">
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid p-4" src="./img/food-5.png" alt="">
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid p-4" src="./img/food-6.png" alt="">
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid p-4" src="./img/food-7.png" alt="">
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid p-4" src="./img/food-8.png" alt="">
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid p-4" src="./img/food-9.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us -->
+
     <div id="pre-order" class="container-fluid m-0 p-0 bg-light p-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Contact Us / Pre Order</h2>
+                    <h2 class="text-center display-4 mb-5">Contact Us</h2>
+                </div>
+                <div class="col-md-6">
                     <form action="#">
-                        <div class="container p-0">
-                            <div class="row">
-                                <div class="col-md-6 d-flex flex-column justify-content-around"">
-                                    <input class=" form-control" type="text" placeholder="Name">
-                                    <input class=" form-control" type="text" placeholder="Company">
-                                    <input class="form-control" type="text" placeholder="Contact Number">
-                                    <input class="form-control" type="text" placeholder="Email">
-                                </div>
-                                <div class="col-md-6">
-                                    <textarea class="form-control" name="" id="" cols="30" rows="10"
-                                        placeholder="Order / Message"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="btn btn-success">Submit</button>
+                        <input class=" form-control" type="text" placeholder="Name">
+                        <input class=" form-control" type="text" placeholder="Company">
+                        <input class="form-control" type="text" placeholder="Contact Number">
+                        <input class="form-control" type="text" placeholder="Email">
+                        <textarea class="form-control" name="" id="" cols="30" rows="10"
+                            placeholder="Message"></textarea>
+                        <button class="btn btn-block btn-success my-2">Submit</button>
                     </form>
+                </div>
+                <div class="col-md-6 bg-dark">
+                    <ul class="list-unstyled text-white">
+                        <li>
+                            <i class="fas fa-envelope-square my-3 fa-2x"></i>
+                            &nbsp;&nbsp;info@chefontheroad.com
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-square-alt my-3 fa-2x"></i>&nbsp;&nbsp;702-286-6160
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt my-3 fa-2x"></i>&nbsp;&nbsp;7435 S Eastern
+                            Ave
+                            #109, Las Vegas, NV 89123
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Image Gallery 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4">
-                <img class="img-fluid p-4" src="./img/food-1.jpg" alt="">
-            </div>
-            <div class="col-md-4">
-                <img class="img-fluid" src="./img/food-2.jpg" alt="">
-            </div>
-            <div class="col-md-4">
-                <img class="img-fluid p-4" src="./img/food-3.jpg" alt="">
-            </div>
-            <div class="col-md-4">
-                <img class="img-fluid p-4" src="./img/food-4.jpg" alt="">
-            </div>
-            <div class="col-md-4">
-                <img class="img-fluid p-4" src="./img/food-5.jpg" alt="">
-            </div>
-            <div class="col-md-4">
-                <img class="img-fluid p-4" src="./img/food-6.jpg" alt="">
-            </div>
-            <div class="col-md-4">
-                <img class="img-fluid p-4" src="./img/food-7.jpg" alt="">
-            </div>
-            <div class="col-md-4">
-                <img class="img-fluid" src="./img/food-8.jpg" alt="">
-            </div>
-        </div>
-    </div>           
-    -->
+
     <!-- Leaflet -->
+
     <div id="mapid"></div>
+
     <!-- Footer -->
+
     <footer>
         <div class="container">
-            <div class="row d-flex align-items-center text-center text-white">
+            <div class="row text-white pt-5">
                 <div class="col-md-4">
+                    <img src="./img/cotr-logo-1.png" alt="Chef on the road logo">
+                    <br>
                     <a href="https://www.facebook.com/chefontheroadpictures/" target="_blank"><i
-                            class="fab fa-facebook-square m-4 f-icon"></i>
+                            class="fab fa-facebook-square fa-2x mt-5 text-white"></i>
                     </a>
                     <a href="https://www.yelp.com/biz/chef-on-the-road-las-vegas" target="_blank"><i
-                            class="fab fa-yelp m-4 f-icon"></i>
+                            class="fab fa-yelp fa-2x m-5 text-white"></i>
                     </a>
                 </div>
                 <div class="col-md-4">
-                    <p class="m-0">Chef On The Road &copy; 2020 All Rights Reserved.</p>
+                    <ul class="list-unstyled">
+                        <li class="py-3">
+                            <a class="text-white" href="#">
+                                Order Online
+                            </a>
+                        </li>
+                        <li class="py-3">
+                            <a class="text-white" href="#">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li class="py-3">
+                            <a class="text-white" href="#">
+                                About Us
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="col-md-4">
+                    <h3>Sign Up For Our Weekly Menu!</h3>
+                    <form action="#">
+                        <input class="form-control" type="email" placeholder="Enter Email">
+                        <button class="btn btn-block btn-success">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <p class="m-0">Chef On The Road &copy; 2020 All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
                     <img class="img-fluid" src="./img/cotr-illustration.png" alt="">
                 </div>
             </div>
         </div>
     </footer>
-
-    <script
-        src="https://www.paypal.com/sdk/js?client-id=ARqzWc8aDt6XydNcsHo15f6hYeL2PzC6-Csj4drbAVP06rPQbqQA32FqB4-zVOGWU-GOmzOJKrP7aA6u"> // Replace YOUR_SB_CLIENT_ID with your sandbox client ID
-        </script>
+    <script src="https://kit.fontawesome.com/b836e57116.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
-    <script src="https://kit.fontawesome.com/b836e57116.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

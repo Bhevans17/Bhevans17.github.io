@@ -1,0 +1,42 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", cursive;
+}
+
+nav,
+footer {
+  background-color: black;
+}
+
+#main {
+  background-image: url("/img/bg-1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#weekly-menu {
+  background-image: url("/img/tablecloth.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#testimonials {
+  background-image: url("/img/julio.JPG");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+}
+
+/* Leaflet Map */
+#mapid {
+  height: 300px;
+}
