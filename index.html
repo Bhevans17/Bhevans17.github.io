@@ -1,17 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brenden Evans | Web Developer</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Brenden Evans | Software Developer</title>
+    <link rel="icon" href="./images/be-logo-light.png" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <!-- Main css file -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <main>
-      <h1>Hello World!</h1>
-      <p>My name is Brenden and i'm a web developer.</p>
-    </main>
+    <!-- Alert -->
+    <div class="alert alert-primary m-0 text-center" role="alert">
+      <i class="bi bi-window-fullscreen"></i> View my website at
+      <a href="https://brendenevans.com/">brendenevans.com</a>
+    </div>
 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark position-sticky">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="index.html"
+          >Brenden <span class="fw-light">Evans</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://forms.gle/gxj8xd7L92wysSYcA"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="./images/main.png"
+            class="d-block mx-lg-auto img-fluid"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+            Hello World!
+          </h1>
+          <p class="lead">
+            My name is Brenden, i'm a software developer with 7+ years of
+            experience.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="#portfolio" class="btn btn-primary btn-lg px-4 me-md-2"
+              >View my work</a
+            >
+            <a
+              href="https://forms.gle/gxj8xd7L92wysSYcA"
+              class="btn btn-outline-secondary btn-lg px-4"
+              >Contact Me</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio" class="container px-4 py-5" id="featured-3">
+      <h2 class="pb-2 border-bottom">Portfolio</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <div
+            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+          >
+            <img class="img-fluid" src="./images/qr-preview.jpg" alt="" />
+          </div>
+          <h3 class="fs-2 text-body-emphasis">QR code component</h3>
+          <p>
+            In this challenge I took a qr code component design and converted
+            into a live website using html/css.
+          </p>
+          <a
+            href="https://qr-code-component-production.netlify.app/"
+            class="icon-link"
+          >
+            View project
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div id="about" class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>About Me</h2>
+          <p>
+            My name is Brenden, i'm a software developer with 7+ years of
+            experience. I began my coding journey in 2017 with codecademy. I
+            landed my first job in 2018 writing PHP and have been sticking with
+            it ever since.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <p class="col-md-4 mb-0 text-body-secondary">© 2023 Brenden Evans</p>
+
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link px-2 text-body-secondary"
+              >Portfolio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link px-2 text-body-secondary">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link px-2 text-body-secondary"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Bootstrap CDN JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Main JavaScript File -->
     <script src="main.js"></script>
   </body>
 </html>
